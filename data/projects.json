@@ -1,0 +1,104 @@
+[
+  {
+    "id": "gedsim",
+    "title": "GEDSim",
+    "subtitle": "GED-style practice platform",
+    "image": "/images/gedsim/img1.png",
+    "description": "An educational platform focused on GED-style practice and learning support.",
+    "tags": ["EdTech", "Web App"],
+    "links": {
+      "live": "https://gedsim.com"
+    }
+  },
+  {
+    "id": "ngm",
+    "title": "NGM",
+    "subtitle": "Education-focused website",
+    "badge": "NGM",
+    "description": "An education-focused website for programs, resources, and learning initiatives.",
+    "tags": ["Education", "Web"],
+    "links": {
+      "live": "https://ngmedu.org"
+    }
+  },
+  {
+    "id": "service-management",
+    "title": "Service Management System",
+    "subtitle": "Full-stack service management",
+    "image": "/images/service-managemnet/img1.png",
+    "description": "A service management platform for handling customer requests, tracking service tickets, and monitoring status across the workflow.",
+    "tags": ["React", "Spring Boot", "Full Stack"],
+    "links": {
+      "code": "https://github.com/aungthuhein2005/service-management-react-spring-boot"
+    }
+  },
+  {
+    "id": "echopost",
+    "title": "EchoPost",
+    "subtitle": "Blogging platform",
+    "image": "/images/echopost/1.png",
+    "description": "A blogging platform where users can create accounts, post blogs, comment on others' posts, and like blogs. Developed using React for the front-end and Laravel for the back-end with InertiaJS.",
+    "tags": ["React", "Laravel", "InertiaJS", "TailwindCSS"],
+    "links": {
+      "demo": "https://youtu.be/Fd_IFmTFhjY?si=WWRxkVgFrDJyuh5a",
+      "code": "https://github.com/aungthuhein2005/EchoPost"
+    }
+  },
+  {
+    "id": "lms",
+    "title": "LMS",
+    "subtitle": "Learning Management System",
+    "badge": "LMS",
+    "description": "A Learning Management System with a React frontend and Java backend, providing dashboards and workflows for students and teachers.",
+    "tags": ["React", "Bootstrap", "React Router", "Java"],
+    "links": {
+      "codeFrontend": "https://github.com/aungthuhein2005/lms-frontend",
+      "codeBackend": "https://github.com/aungthuhein2005/lms-backend"
+    }
+  },
+  {
+    "id": "customer-churn",
+    "title": "Customer Churn Prediction",
+    "subtitle": "ML-based churn risk dashboard",
+    "badge": "ML",
+    "image": "/images/customer-churn/img1.png",
+    "description": "Developed a web application that predicts customer churn probability based on uploaded datasets. Implemented a machine learning model using Python and Scikit-learn, with a React-based frontend for data upload and result visualization.",
+    "tags": ["Machine Learning", "Data Science", "Web App"],
+    "links": {
+      "live": "https://customer-churn-prediction-qrpi5mtf2-aung-thu-heins-projects.vercel.app/"
+    }
+  },
+  {
+    "id": "erp-system",
+    "title": "ERP System",
+    "subtitle": "Desktop ERP application",
+    "badge": "ERP",
+    "description": "Developed as a team project at Host Myanmar Institute. Contributed as a Full-Stack Developer, working on the POS module, payment module, and unit exchange module. Built the application using Java SE and JavaFX for the user interface, with MySQL as the database.",
+    "tags": ["Java", "ERP"],
+    "links": {
+      "code": "https://github.com/yanmyoaung2004/erp_final_java"
+    }
+  },
+  {
+    "id": "devask",
+    "title": "DevAsk",
+    "subtitle": "Q&A platform for developers",
+    "image": "/images/devask/1.png",
+    "description": "A Q&A platform inspired by StackOverflow, designed for developers to ask coding-related questions and provide answers.",
+    "tags": ["JavaEE", "Bootstrap", "MySQL"],
+    "links": {
+      "code": "https://github.com/aungthuhein2005/dev_ask"
+    }
+  },
+  {
+    "id": "trash-trade",
+    "title": "Trash Trade",
+    "subtitle": "Computer-vision trash trading",
+    "image": "/images/trashtrade/1.png",
+    "description": "A project aimed at reducing global trash by using computer vision to detect trash types. Users can trade trash for points, which can then be exchanged for gifts.",
+    "tags": ["Python", "Flask"],
+    "links": {
+      "code": "https://github.com/aungthuhein2005/trash_trade"
+    }
+  }
+]

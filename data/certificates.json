@@ -1,0 +1,38 @@
+[
+  {
+    "id": "ip",
+    "title": "Information Technology Passport Examination",
+    "image": "/images/certificate/IP.jpeg",
+    "alt": "Information Technology Passport Examination certificate",
+    "description": "Information Technology Passport Examination is a certification program that assesses the knowledge and skills of IT professionals. It is a globally recognized certification that is accepted by many companies and organizations.",
+    "year": 2024,
+    "issuer": "ITPEC"
+  },
+  {
+    "id": "fe",
+    "title": "Fundamental Information Technology Engineer Examination",
+    "image": "/images/certificate/fe.jpg",
+    "alt": "Fundamental Information Technology Engineer Examination certificate",
+    "description": "Fundamental Information Technology Engineer Examination is a certification program that assesses the knowledge and skills of IT professionals. It is a globally recognized certification that is accepted by many companies and organizations.",
+    "year": 2025,
+    "issuer": "ITPEC"
+  },
+  {
+    "id": "other",
+    "title": "Other Certificates",
+    "image": null,
+    "alt": null,
+    "description": "Additional certificates covering networking, programming, hackathons, and language proficiency.",
+    "items": [
+      "A+ and Networking – Host Myanmar Institute (2023)",
+      "C Programming – Host Myanmar Institute (2023)",
+      "JavaScript Intermediate – HackerRank (2023)",
+      "Java – Host Myanmar Institute (2024)",
+      "IP (Information Technology Professional) – ITPEC (2024)",
+      "JLPT (N4) – (2024)",
+      "Code2Career Hackathon Participant Certificate – (2024)",
+      "World Engineering Day Hackathon Participant Certificate – (2025)",
+      "FE (Fundamental Information Technology Engineer Examination) – (2025)"
+    ]
+  }
+]
