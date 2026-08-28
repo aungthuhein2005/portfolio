@@ -4,11 +4,54 @@ function toggleDarkMode() {
   localStorage.theme = document.documentElement.classList.contains('dark')
     ? 'dark'
     : 'light';
+  updateDarkModeControls();
 }
 
 // Mobile menu toggle
 function toggleMobileMenu() {
-  document.getElementById('mobile-menu').classList.toggle('hidden');
+  const menu = document.getElementById('mobile-menu');
+  const button = document.getElementById('mobile-menu-button');
+  if (!menu || !button) return;
+
+  const isOpen = menu.classList.toggle('hidden') === false;
+  button.setAttribute('aria-expanded', String(isOpen));
+  button.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
+}
+
+function closeMobileMenu() {
+  const menu = document.getElementById('mobile-menu');
+  const button = document.getElementById('mobile-menu-button');
+  if (!menu || !button) return;
+
+  menu.classList.add('hidden');
+  button.setAttribute('aria-expanded', 'false');
+  button.setAttribute('aria-label', 'Open navigation menu');
+}
+
+function updateDarkModeControls() {
+  const isDark = document.documentElement.classList.contains('dark');
+  document.querySelectorAll('[onclick="toggleDarkMode()"]')
+    .forEach((button) => button.setAttribute('aria-pressed', String(isDark)));
+}
+
+function setupContactForm() {
+  const form = document.getElementById('contact-form');
+  const status = document.getElementById('contact-status');
+  if (!form) return;
+
+  form.addEventListener('submit', (event) => {
+    event.preventDefault();
+
+    const data = new FormData(form);
+    const name = String(data.get('name') || '').trim();
+    const email = String(data.get('email') || '').trim();
+    const message = String(data.get('message') || '').trim();
+    const subject = encodeURIComponent(`Portfolio inquiry from ${name}`);
+    const body = encodeURIComponent(`${message}\n\nFrom: ${name}\nEmail: ${email}`);
+
+    if (status) status.textContent = 'Opening your email app...';
+    window.location.href = `mailto:aungthuhein.ath05@gmail.com?subject=${subject}&body=${body}`;
+  });
 }
 
 // Load projects from JSON and render cards
@@ -17,7 +60,7 @@ async function loadProjects() {
   if (!grid) return;
 
   try {
-    const res = await fetch('data/projects.json');
+    const res = await fetch('data/projects.json', { cache: 'no-cache' });
     if (!res.ok) throw new Error('Failed to load projects.json');
     const projects = await res.json();
 
@@ -57,11 +100,17 @@ async function loadProjects() {
           )
           .join('');
 
+        const imageFitClass = project.imageFit === 'contain'
+          ? 'object-contain bg-gray-100 dark:bg-gray-900'
+          : 'object-cover';
+
         const imageOrGradient = hasImage
           ? `<img
               src="${project.image}"
               alt="${project.title}"
-              class="w-full h-48 object-cover transform group-hover:scale-110 transition-transform duration-300"
+              loading="lazy"
+              decoding="async"
+              class="w-full h-48 ${imageFitClass} transform group-hover:scale-110 transition-transform duration-300"
             />`
           : `<div
               class="w-full h-48 bg-gradient-to-br from-primary/30 via-secondary/20 to-black/10 dark:to-white/5 flex items-end"
@@ -161,6 +210,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Projects
   loadProjects();
+
+  setupContactForm();
+  updateDarkModeControls();
 });
 
 // Check for saved user preference, respect OS preference
@@ -183,6 +235,7 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
       target.scrollIntoView({
         behavior: 'smooth'
       });
+      closeMobileMenu();
     }
   });
 });

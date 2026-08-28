@@ -18,6 +18,15 @@
     "issuer": "ITPEC"
   },
   {
+    "id": "ml-summer-school-2026",
+    "title": "ML Summer School 2026 - Certificate of Participation",
+    "image": "/images/certificate/ml-summer-school-2026.png",
+    "alt": "ML Summer School 2026 Certificate of Participation awarded to Aung Thu Hein",
+    "description": "Certificate of Participation for meaningful participation and contribution to ML Summer School 2026.",
+    "year": 2026,
+    "issuer": "Cohere Labs Open Science Community"
+  },
+  {
     "id": "other",
     "title": "Other Certificates",
     "image": null,

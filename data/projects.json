@@ -1,13 +1,75 @@
 [
   {
+    "id": "markdown-editor",
+    "title": "MarkdownEditor",
+    "subtitle": "Desktop Markdown editor",
+    "badge": "Desktop",
+    "image": "/images/markdown-editor/logo.png",
+    "imageFit": "contain",
+    "description": "A Java desktop Markdown editor with live HTML preview, file-tree management, undo and redo, GFM tables, PDF export, and a bundled Windows installer.",
+    "tags": ["Java", "Swing", "JavaFX", "CommonMark"],
+    "links": {
+      "live": "https://aungthuhein2005.github.io/MarkdownEditor/",
+      "code": "https://github.com/aungthuhein2005/MarkdownEditor"
+    }
+  },
+  {
+    "id": "burmese-nlp",
+    "title": "BurmeseNLP",
+    "subtitle": "Open-source Myanmar NLP toolkit",
+    "badge": "NLP",
+    "image": "/images/burmesenlp/logo.png",
+    "imageFit": "contain",
+    "description": "A dependency-light Python library for rule-based Myanmar language processing, including normalization, segmentation, POS tagging, phrase chunking, gazetteer NER, clause parsing, and corpus export.",
+    "tags": ["Python", "NLP", "Open Source", "PyPI"],
+    "links": {
+      "live": "https://aungthuhein2005.github.io/burmesenlp/",
+      "code": "https://github.com/aungthuhein2005/burmesenlp"
+    }
+  },
+  {
+    "id": "burmese-pos-tagger",
+    "title": "Burmese POS Workbench",
+    "subtitle": "XLM-R Myanmar POS tagging",
+    "badge": "ML",
+    "description": "A local Python and Streamlit workbench for word-level Myanmar part-of-speech tagging, powered by an XLM-R token classifier trained on myPOS data and high-confidence pseudo-labeled text.",
+    "tags": ["Python", "XLM-R", "Streamlit", "NLP"],
+    "links": {
+      "code": "https://github.com/aungthuhein2005/burmese-pos-tagger"
+    }
+  },
+  {
+    "id": "krypto",
+    "title": "Krypto",
+    "subtitle": "Secure desktop file encryption",
+    "badge": "Security",
+    "description": "A JavaFX desktop application for AES-256 and ChaCha20 file encryption and decryption, with drag-and-drop input, password strength feedback, searchable history, CSV export, and configurable settings.",
+    "tags": ["Java", "JavaFX", "AES-256", "ChaCha20"],
+    "links": {
+      "demo": "https://www.tiktok.com/@aung_thu_hein_/video/7629012670762470677",
+      "code": "https://github.com/aungthuhein2005/krypto"
+    }
+  },
+  {
     "id": "gedsim",
     "title": "GEDSim",
     "subtitle": "GED-style practice platform",
     "image": "/images/gedsim/img1.png",
-    "description": "An educational platform focused on GED-style practice and learning support.",
-    "tags": ["EdTech", "Web App"],
+    "description": "An AI-powered GED practice platform with automated question generation, practice tests, and mock examinations.",
+    "tags": ["EdTech", "AI", "Web App"],
     "links": {
       "live": "https://gedsim.com"
+    }
+  },
+  {
+    "id": "meet-to-talk",
+    "title": "MeetToTalk",
+    "subtitle": "Meetup discovery and sharing",
+    "badge": "Community",
+    "description": "A lightweight event platform for discovering nearby meetups, sharing them with one link, and organizing community events, coffee chats, and spontaneous hangouts.",
+    "tags": ["Community", "Events", "Web App"],
+    "links": {
+      "live": "https://meetup-nine-pearl.vercel.app"
     }
   },
   {
