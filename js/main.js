@@ -77,6 +77,12 @@ async function loadProjects() {
           links.live
             ? `<a href="${links.live}" target="_blank" rel="noopener noreferrer" class="px-3 py-1 bg-primary text-white text-sm rounded-full hover:bg-secondary transition-colors">Live</a>`
             : '',
+          links.space
+            ? `<a href="${links.space}" target="_blank" rel="noopener noreferrer" class="px-3 py-1 bg-primary text-white text-sm rounded-full hover:bg-secondary transition-colors">Space</a>`
+            : '',
+          links.model
+            ? `<a href="${links.model}" target="_blank" rel="noopener noreferrer" class="px-3 py-1 bg-white/20 text-white text-sm rounded-full hover:bg-white/30 transition-colors">Model</a>`
+            : '',
           links.codeFrontend
             ? `<a href="${links.codeFrontend}" target="_blank" rel="noopener noreferrer" class="px-3 py-1 bg-white/20 text-white text-sm rounded-full hover:bg-white/30 transition-colors">Frontend</a>`
             : '',
@@ -128,7 +134,9 @@ async function loadProjects() {
 
         const primaryLink =
           links.live ||
+          links.space ||
           links.demo ||
+          links.model ||
           links.codeFrontend ||
           links.code ||
           links.codeBackend ||
@@ -136,8 +144,12 @@ async function loadProjects() {
 
         const primaryCtaLabel = links.live
           ? 'Visit Website'
+          : links.space
+          ? 'Open Hugging Face Space'
           : links.demo
           ? 'Watch Demo'
+          : links.model
+          ? 'View Hugging Face Model'
           : links.codeFrontend
           ? 'View Frontend Repository'
           : links.code

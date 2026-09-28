@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Portfolio of Aung Thu Hein, a Computer Science student and software engineer in Bangkok building full-stack, AI-powered, and educational software."
+      content="Software engineering portfolio of Aung Thu Hein, featuring enterprise education systems, full-stack architecture, and Myanmar NLP and machine-learning pipelines."
     />
     <meta name="theme-color" content="#111827" />
     <meta property="og:title" content="Aung Thu Hein - Software Engineer" />
     <meta
       property="og:description"
-      content="Full-stack, AI-powered, and educational software projects by Aung Thu Hein."
+      content="Enterprise platforms, full-stack architecture, and applied AI engineering by Aung Thu Hein."
     />
     <meta property="og:type" content="website" />
     <meta property="og:image" content="images/me.jpeg" />
@@ -31,6 +31,50 @@
 
       section[id] {
         scroll-margin-top: 5rem;
+      }
+
+      .social-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+      }
+
+      .social-link {
+        width: 2.5rem;
+        height: 2.5rem;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        color: #6b7280;
+        background: rgba(243, 244, 246, 0.9);
+        border: 1px solid rgba(209, 213, 219, 0.8);
+        border-radius: 9999px;
+        transition: color 180ms ease, background-color 180ms ease,
+          border-color 180ms ease, transform 180ms ease;
+      }
+
+      .dark .social-link {
+        color: #9ca3af;
+        background: rgba(31, 41, 55, 0.9);
+        border-color: rgba(75, 85, 99, 0.8);
+      }
+
+      .social-link:hover,
+      .social-link:focus-visible {
+        color: #fff;
+        background: #2563eb;
+        border-color: #2563eb;
+        transform: translateY(-2px);
+      }
+
+      .social-link:focus-visible {
+        outline: 2px solid #2563eb;
+        outline-offset: 3px;
+      }
+
+      .social-link svg {
+        width: 1.25rem;
+        height: 1.25rem;
       }
 
       @media (prefers-reduced-motion: reduce) {
@@ -188,7 +232,7 @@
               <h2
                 class="text-lg md:text-xl text-primary font-semibold tracking-wide uppercase"
               >
-                Computer Science Student &amp; Software Engineer
+                Software Engineer • AI/NLP Builder • CS Student
               </h2>
               <h1
                 class="text-5xl md:text-7xl font-bold text-gray-900 dark:text-white"
@@ -203,8 +247,9 @@
               <p
                 class="text-xl md:text-2xl text-gray-600 dark:text-gray-300 leading-relaxed"
               >
-                Building full-stack, AI-powered, and educational software that
-                solves practical problems.
+                I design full-stack platforms and language AI systems—from
+                enterprise education workflows to production-oriented Myanmar
+                NLP pipelines.
               </p>
 
               <!-- CTA Buttons -->
@@ -241,13 +286,13 @@
               </div>
 
               <!-- Social Links -->
-              <div class="flex gap-4 pt-6">
+              <div class="social-links pt-6">
                 <a
                   href="https://github.com/aungthuhein2005"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="GitHub profile"
-                  class="text-gray-600 dark:text-gray-400 hover:text-primary transition-colors"
+                  class="social-link"
                 >
                   <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                     <path
@@ -260,7 +305,7 @@
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Facebook profile"
-                  class="text-gray-600 dark:text-gray-400 hover:text-primary transition-colors"
+                  class="social-link"
                 >
                   <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                     <path
@@ -273,7 +318,7 @@
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="TikTok profile"
-                  class="text-gray-600 dark:text-gray-400 hover:text-primary transition-colors"
+                  class="social-link"
                 >
                   <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                     <path
@@ -286,16 +331,21 @@
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="Hugging Face profile"
-                  class="text-gray-600 dark:text-gray-400 hover:text-primary transition-colors"
+                  class="social-link"
                 >
-                  <span class="text-xl leading-none" aria-hidden="true">🤗</span>
+                  <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2" />
+                    <circle cx="9" cy="10" r="1" fill="currentColor" />
+                    <circle cx="15" cy="10" r="1" fill="currentColor" />
+                    <path d="M8 14c1.1 1.35 2.43 2 4 2s2.9-.65 4-2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                  </svg>
                 </a>
                 <a
                   href="https://www.linkedin.com/in/aung-thu-hein-047620240"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="LinkedIn profile"
-                  class="text-gray-600 dark:text-gray-400 hover:text-primary transition-colors"
+                  class="social-link"
                 >
                   <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                     <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V8.98h3.42v1.57h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.29zM5.32 7.41a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13zM7.1 20.45H3.54V8.98H7.1v11.47zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z" />
@@ -457,17 +507,17 @@
               class=""
             >
               <p class="text-gray-700 dark:text-gray-200 leading-relaxed">
-                I'm a Computer Science student at Rangsit University and a software engineer at New Generation Myanmar. I build full-stack, AI-powered, and educational software, with a focus on useful products that improve learning and organizational workflows. I hold the
+                I'm a software engineer at New Generation Myanmar and a Computer Science student at Rangsit University. My work sits at the intersection of product engineering and applied AI: I translate operational requirements into maintainable interfaces, services, data models, and machine-learning workflows. I hold the
                 <span class="font-semibold text-gray-900 dark:text-white">IP</span>
                 and
                 <span class="font-semibold text-gray-900 dark:text-white">FE</span>
-                certifications from ITPEC and expect to graduate with a Bachelor of Computer Science in 2029.
+                certifications from ITPEC and am completing a Bachelor of Computer Science with an expected graduation in 2029.
               </p>
               <p class="text-gray-700 dark:text-gray-200 leading-relaxed">
-                My recent work includes a training management portal, a student information management system, the AI-powered GEDSim practice platform, and MeetToTalk, an event-discovery and sharing product. I also have hands-on experience with POS, ERP, learning management, and service management systems.
+                In professional delivery, I contribute to education platforms such as training-management and student-information systems, working across user workflows, business rules, and full-stack implementation. My independent engineering work extends from React and Laravel products to desktop security tools and reusable Python packages for Myanmar-language processing.
               </p>
               <p class="text-gray-700 dark:text-gray-200 leading-relaxed mb-0">
-                I enjoy turning real requirements into reliable interfaces, APIs, and data workflows. My current interests include applied AI, education technology, sustainability, cybersecurity, and developer tooling.
+                I am especially focused on systems that demand both software-engineering discipline and model-level reasoning: NLP pipelines, inference interfaces, data preprocessing, and domain-specific tooling. The goal is not simply to demonstrate technologies, but to build components that are understandable, testable, and useful beyond a single demo.
               </p>
             </div>
           </div>
@@ -476,10 +526,10 @@
           <div class="flex items-center justify-between gap-4 flex-wrap">
             <div>
               <h3 class="text-2xl font-bold text-gray-900 dark:text-white">
-                Technical Skills
+                Engineering Capabilities
               </h3>
               <p class="text-sm text-gray-500 dark:text-gray-400 mt-1">
-                A quick overview of the technologies I work with across the full stack.
+                Technologies I use to design interfaces, services, data flows, and AI-enabled products.
               </p>
             </div>
           </div>
@@ -493,7 +543,7 @@
                     Frontend
                   </h4>
                   <p class="text-xs text-gray-500 dark:text-gray-400">
-                    Modern, responsive web interfaces
+                    Stateful, responsive product interfaces
                   </p>
                 </div>
                 <span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-primary/10 text-primary text-xs font-semibold">
@@ -533,7 +583,7 @@
                     Backend
                   </h4>
                   <p class="text-xs text-gray-500 dark:text-gray-400">
-                    APIs and business logic
+                    APIs, services, and domain logic
                   </p>
                 </div>
                 <span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-secondary/10 text-secondary text-xs font-semibold">
@@ -570,7 +620,7 @@
                     Databases
                   </h4>
                   <p class="text-xs text-gray-500 dark:text-gray-400">
-                    Relational & NoSQL
+                    Relational and document data modeling
                   </p>
                 </div>
                 <span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-emerald-100 dark:bg-emerald-900/40 text-emerald-700 dark:text-emerald-300 text-xs font-semibold">
@@ -598,7 +648,7 @@
                     Tools & Platforms
                   </h4>
                   <p class="text-xs text-gray-500 dark:text-gray-400">
-                    Workflow & collaboration
+                    Delivery, AI, and engineering workflow
                   </p>
                 </div>
                 <span class="inline-flex items-center justify-center w-8 h-8 rounded-full bg-indigo-100 dark:bg-indigo-900/40 text-indigo-700 dark:text-indigo-300 text-xs font-semibold">
@@ -663,13 +713,13 @@
         <!-- Projects Section Header -->
         <div class="text-center mb-16">
           <h2 class="text-4xl font-bold text-gray-900 dark:text-white mb-4">
-            My Projects
+            Selected Engineering Work
             <span
               class="block w-20 h-1 bg-gradient-to-r from-primary to-secondary mx-auto mt-4 rounded-full"
             ></span>
           </h2>
           <p class="text-gray-600 dark:text-gray-400 text-lg">
-            Some of my recent work and side projects
+            Product systems, AI pipelines, and developer tools—framed by the engineering decisions behind them.
           </p>
         </div>
 
@@ -714,8 +764,8 @@
               />
             </button>
             <div class="p-6">
-              <h4 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Information Technology Passport Examination</h4>
-              <p class="text-gray-600 dark:text-gray-300 text-sm mb-4">Information Technology Passport Examination is a certification program that assesses the knowledge and skills of IT professionals. It is a globally recognized certification that is accepted by many companies and organizations.</p>
+              <h4 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">ITPEC Information Technology Passport (IP)</h4>
+              <p class="text-gray-600 dark:text-gray-300 text-sm mb-4">Validated broad computing fundamentals across software, hardware, networks, databases, security, project management, and the business application of IT.</p>
             </div>
           </div>
 
@@ -736,8 +786,8 @@
               />
             </button>
             <div class="p-6">
-              <h4 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Fundamental Information Technology Engineer Examination</h4>
-              <p class="text-gray-600 dark:text-gray-300 text-sm mb-4">Fundamental Information Technology Engineer Examination is a certification program that assesses the knowledge and skills of IT professionals. It is a globally recognized certification that is accepted by many companies and organizations.</p>
+              <h4 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">ITPEC Fundamental IT Engineer (FE)</h4>
+              <p class="text-gray-600 dark:text-gray-300 text-sm mb-4">Demonstrated engineering-level foundations in algorithms, data structures, computer architecture, operating systems, networking, databases, security, and software development.</p>
             </div>
           </div>
 
@@ -769,8 +819,8 @@
         </div>
         <div class="">
           <div class="p-6">
-            <h4 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Other certificates</h4>
-            <p class="text-gray-600 dark:text-gray-300 text-sm mb-4">Other certificates are a collection of certifications that assess the knowledge and skills of IT professionals. It is a globally recognized certification that is accepted by many companies and organizations.</p>
+            <h4 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Additional Training &amp; Technical Participation</h4>
+            <p class="text-gray-600 dark:text-gray-300 text-sm mb-4">Supporting coursework and technical programs spanning programming, infrastructure, language proficiency, and collaborative engineering challenges.</p>
             <ul class="list-disc list-inside text-gray-600 dark:text-gray-300">
               <li>A+ and Networking – Host Myanmar Institute (2023)</li>
               <li>C Programming – Host Myanmar Institute (2023)</li>
@@ -807,7 +857,7 @@
             ></div>
           </h2>
           <p class="text-gray-600 dark:text-gray-400 mt-4 text-lg">
-            Let's create something amazing together
+            Open to software engineering, applied AI, and technical collaboration.
           </p>
         </div>
 
@@ -887,13 +937,13 @@
 
               <!-- Social Links -->
               <div class="pt-8 border-t border-gray-200 dark:border-gray-700">
-                <div class="flex space-x-4">
+                <div class="social-links">
                   <a
                     href="https://github.com/aungthuhein2005"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="GitHub profile"
-                    class="w-10 h-10 bg-gray-100 dark:bg-gray-700 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-colors"
+                    class="social-link"
                   >
                     <svg
                       class="w-6 h-6"
@@ -910,7 +960,7 @@
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="Facebook profile"
-                    class="w-10 h-10 bg-gray-100 dark:bg-gray-700 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-colors"
+                    class="social-link"
                   >
                     <svg
                       class="w-5 h-5"
@@ -926,8 +976,8 @@
                     href="https://www.tiktok.com/@aung_thu_hein_"
                     target="_blank"
                     rel="noopener noreferrer"
-                    class="w-10 h-10 bg-gray-100 dark:bg-gray-700 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-colors"
-                    aria-label="TikTok"
+                    class="social-link"
+                    aria-label="TikTok profile"
                   >
                     <svg
                       class="w-6 h-6"
@@ -945,16 +995,21 @@
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="Hugging Face profile"
-                    class="w-10 h-10 bg-gray-100 dark:bg-gray-700 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-colors"
+                    class="social-link"
                   >
-                    <span class="text-xl leading-none" aria-hidden="true">🤗</span>
+                    <svg viewBox="0 0 24 24" aria-hidden="true">
+                      <circle cx="12" cy="12" r="9" fill="none" stroke="currentColor" stroke-width="2" />
+                      <circle cx="9" cy="10" r="1" fill="currentColor" />
+                      <circle cx="15" cy="10" r="1" fill="currentColor" />
+                      <path d="M8 14c1.1 1.35 2.43 2 4 2s2.9-.65 4-2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                    </svg>
                   </a>
                   <a
                     href="https://www.linkedin.com/in/aung-thu-hein-047620240"
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label="LinkedIn profile"
-                    class="w-10 h-10 bg-gray-100 dark:bg-gray-700 rounded-full flex items-center justify-center hover:bg-primary hover:text-white transition-colors"
+                    class="social-link"
                   >
                     <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                       <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V8.98h3.42v1.57h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.29zM5.32 7.41a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13zM7.1 20.45H3.54V8.98H7.1v11.47zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z" />
@@ -1069,7 +1124,7 @@
 
     <!-- Scripts -->
     <script src="js/three-background.js?v=20260828"></script>
-    <script src="js/main.js?v=20260828b"></script>
+    <script src="js/main.js?v=20260928"></script>
 
     <!-- Project 2 Modal: AI Chat Application -->
     <div

@@ -4,7 +4,7 @@
     "title": "Information Technology Passport Examination",
     "image": "/images/certificate/IP.jpeg",
     "alt": "Information Technology Passport Examination certificate",
-    "description": "Information Technology Passport Examination is a certification program that assesses the knowledge and skills of IT professionals. It is a globally recognized certification that is accepted by many companies and organizations.",
+    "description": "Validated broad computing fundamentals across software, hardware, networks, databases, security, project management, and the business application of IT.",
     "year": 2024,
     "issuer": "ITPEC"
   },
@@ -13,7 +13,7 @@
     "title": "Fundamental Information Technology Engineer Examination",
     "image": "/images/certificate/fe.jpg",
     "alt": "Fundamental Information Technology Engineer Examination certificate",
-    "description": "Fundamental Information Technology Engineer Examination is a certification program that assesses the knowledge and skills of IT professionals. It is a globally recognized certification that is accepted by many companies and organizations.",
+    "description": "Demonstrated engineering-level foundations in algorithms, data structures, computer architecture, operating systems, networking, databases, security, and software development.",
     "year": 2025,
     "issuer": "ITPEC"
   },
@@ -31,7 +31,7 @@
     "title": "Other Certificates",
     "image": null,
     "alt": null,
-    "description": "Additional certificates covering networking, programming, hackathons, and language proficiency.",
+    "description": "Supporting coursework and technical programs spanning programming, infrastructure, language proficiency, and collaborative engineering challenges.",
     "items": [
       "A+ and Networking – Host Myanmar Institute (2023)",
       "C Programming – Host Myanmar Institute (2023)",

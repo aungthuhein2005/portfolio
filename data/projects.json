@@ -1,12 +1,23 @@
 [
   {
+    "id": "ngm",
+    "title": "Enterprise Education Platforms",
+    "subtitle": "Professional engineering at New Generation Myanmar",
+    "badge": "Professional Work",
+    "description": "Challenge: replace fragmented academic operations with consistent digital workflows. I contribute across training-management and student-information portals, translating domain rules into maintainable full-stack features, role-aware interfaces, and structured data flows.",
+    "tags": ["Professional Work", "Full Stack", "Workflow Systems", "EdTech"],
+    "links": {
+      "live": "https://ngmedu.org"
+    }
+  },
+  {
     "id": "markdown-editor",
     "title": "MarkdownEditor",
     "subtitle": "Desktop Markdown editor",
     "badge": "Desktop",
     "image": "/images/markdown-editor/logo.png",
     "imageFit": "contain",
-    "description": "A Java desktop Markdown editor with live HTML preview, file-tree management, undo and redo, GFM tables, PDF export, and a bundled Windows installer.",
+    "description": "Architected a desktop editing workflow that keeps filesystem state, editor state, and a JavaFX WebView preview synchronized. The Swing application combines CommonMark/GFM rendering, undo-redo history, PDF export, and a packaged Windows installer.",
     "tags": ["Java", "Swing", "JavaFX", "CommonMark"],
     "links": {
       "live": "https://aungthuhein2005.github.io/MarkdownEditor/",
@@ -20,7 +31,7 @@
     "badge": "NLP",
     "image": "/images/burmesenlp/logo.png",
     "imageFit": "contain",
-    "description": "A dependency-light Python library for rule-based Myanmar language processing, including normalization, segmentation, POS tagging, phrase chunking, gazetteer NER, clause parsing, and corpus export.",
+    "description": "Designed a dependency-light, staged Myanmar-language pipeline with deterministic APIs for normalization, Zawgyi conversion, segmentation, POS tagging, phrase chunking, gazetteer NER, clause parsing, and corpus export. The library supports bundled and custom lexicons without requiring model downloads.",
     "tags": ["Python", "NLP", "Open Source", "PyPI"],
     "links": {
       "live": "https://aungthuhein2005.github.io/burmesenlp/",
@@ -28,13 +39,39 @@
     }
   },
   {
+    "id": "laya-burmese-sib200",
+    "title": "Laya Burmese SIB-200",
+    "subtitle": "Calibrated Burmese topic classification",
+    "badge": "Hugging Face Model",
+    "description": "Fine-tuned a 0.3B-parameter multilingual Laya checkpoint on the Burmese SIB-200 split for typed seven-class topic decisions. Temperature scaling reduced calibration error to 0.051; on the official 204-example test split, the model reached 71.6% accuracy and 67.7% macro-F1 versus a 44.1% zero-shot baseline.",
+    "tags": ["Laya", "Burmese NLP", "Fine-Tuning", "Calibration"],
+    "links": {
+      "space": "https://huggingface.co/spaces/aungthuhein-dev/laya-burmese-sib200-demo",
+      "model": "https://huggingface.co/aungthuhein-dev/laya-burmese-sib200"
+    }
+  },
+  {
+    "id": "learn-myanmar-script",
+    "title": "Learn Myanmar Script",
+    "subtitle": "In-browser Burmese handwriting recognition",
+    "badge": "ONNX Computer Vision",
+    "description": "Co-developed an educational handwriting-recognition experience that runs ONNX inference directly in the browser. A canvas-based practice interface connects character drawing, reference forms, recognition feedback, and quiz workflows without requiring a server-side inference API.",
+    "tags": ["Computer Vision", "ONNX Runtime Web", "Browser Inference", "EdTech"],
+    "links": {
+      "live": "https://aungthuhein2005.github.io/learn-myanmar-script/",
+      "model": "https://huggingface.co/aungthuhein-dev/myanmar-handwriting",
+      "code": "https://github.com/aungthuhein2005/learn-myanmar-script"
+    }
+  },
+  {
     "id": "burmese-pos-tagger",
     "title": "Burmese POS Workbench",
     "subtitle": "XLM-R Myanmar POS tagging",
     "badge": "ML",
-    "description": "A local Python and Streamlit workbench for word-level Myanmar part-of-speech tagging, powered by an XLM-R token classifier trained on myPOS data and high-confidence pseudo-labeled text.",
+    "description": "Integrated BurmeseNLP word segmentation with an XLM-R token-classification model, a reusable Python wrapper, and a cached Streamlit inference interface. The model reports 97.24% accuracy on its in-domain holdout while remaining runnable on a local machine.",
     "tags": ["Python", "XLM-R", "Streamlit", "NLP"],
     "links": {
+      "model": "https://huggingface.co/aungthuhein-dev/burmese-pos-xlmr",
       "code": "https://github.com/aungthuhein2005/burmese-pos-tagger"
     }
   },
@@ -43,7 +80,7 @@
     "title": "Krypto",
     "subtitle": "Secure desktop file encryption",
     "badge": "Security",
-    "description": "A JavaFX desktop application for AES-256 and ChaCha20 file encryption and decryption, with drag-and-drop input, password strength feedback, searchable history, CSV export, and configurable settings.",
+    "description": "Built a JavaFX security utility around AES-256 and ChaCha20 encryption workflows. The application coordinates file validation, password feedback, progress state, configurable output handling, searchable operation history, and CSV export behind a packaged desktop interface.",
     "tags": ["Java", "JavaFX", "AES-256", "ChaCha20"],
     "links": {
       "demo": "https://www.tiktok.com/@aung_thu_hein_/video/7629012670762470677",
@@ -53,10 +90,10 @@
   {
     "id": "gedsim",
     "title": "GEDSim",
-    "subtitle": "GED-style practice platform",
+    "subtitle": "AI-assisted assessment platform",
     "image": "/images/gedsim/img1.png",
-    "description": "An AI-powered GED practice platform with automated question generation, practice tests, and mock examinations.",
-    "tags": ["EdTech", "AI", "Web App"],
+    "description": "Engineered an AI-assisted learning workflow that turns generated assessment content into practice tests and exam-style sessions. The product connects content generation, learner interaction, and structured mock-exam flows in a unified web experience.",
+    "tags": ["EdTech", "Generative AI", "Assessment Systems", "Web App"],
     "links": {
       "live": "https://gedsim.com"
     }
@@ -66,21 +103,10 @@
     "title": "MeetToTalk",
     "subtitle": "Meetup discovery and sharing",
     "badge": "Community",
-    "description": "A lightweight event platform for discovering nearby meetups, sharing them with one link, and organizing community events, coffee chats, and spontaneous hangouts.",
+    "description": "Developed a focused event-discovery product that reduces the path from finding a meetup to sharing and joining it. The system models event details, reusable public links, and lightweight coordination for community and spontaneous gatherings.",
     "tags": ["Community", "Events", "Web App"],
     "links": {
       "live": "https://meetup-nine-pearl.vercel.app"
-    }
-  },
-  {
-    "id": "ngm",
-    "title": "NGM",
-    "subtitle": "Education-focused website",
-    "badge": "NGM",
-    "description": "An education-focused website for programs, resources, and learning initiatives.",
-    "tags": ["Education", "Web"],
-    "links": {
-      "live": "https://ngmedu.org"
     }
   },
   {
@@ -88,8 +114,8 @@
     "title": "Service Management System",
     "subtitle": "Full-stack service management",
     "image": "/images/service-managemnet/img1.png",
-    "description": "A service management platform for handling customer requests, tracking service tickets, and monitoring status across the workflow.",
-    "tags": ["React", "Spring Boot", "Full Stack"],
+    "description": "Implemented a React client and Spring Boot service layer around the complete ticket lifecycle—from customer request intake to assignment, status transitions, and operational tracking. The separation of UI, API, and domain logic keeps workflow rules explicit and extensible.",
+    "tags": ["React", "Spring Boot", "REST API", "Workflow Design"],
     "links": {
       "code": "https://github.com/aungthuhein2005/service-management-react-spring-boot"
     }
@@ -97,9 +123,9 @@
   {
     "id": "echopost",
     "title": "EchoPost",
-    "subtitle": "Blogging platform",
+    "subtitle": "Full-stack social publishing system",
     "image": "/images/echopost/1.png",
-    "description": "A blogging platform where users can create accounts, post blogs, comment on others' posts, and like blogs. Developed using React for the front-end and Laravel for the back-end with InertiaJS.",
+    "description": "Built an end-to-end publishing system for authenticated authors, posts, comments, and reactions. Laravel owns routing, persistence, authentication, and interaction rules, while InertiaJS connects the React interface without duplicating the application as a separate REST client.",
     "tags": ["React", "Laravel", "InertiaJS", "TailwindCSS"],
     "links": {
       "demo": "https://youtu.be/Fd_IFmTFhjY?si=WWRxkVgFrDJyuh5a",
@@ -111,7 +137,7 @@
     "title": "LMS",
     "subtitle": "Learning Management System",
     "badge": "LMS",
-    "description": "A Learning Management System with a React frontend and Java backend, providing dashboards and workflows for students and teachers.",
+    "description": "Designed role-specific learning workflows across a React frontend and Java backend. Student and teacher dashboards separate concerns while sharing a consistent domain model for course activity, access, and academic operations.",
     "tags": ["React", "Bootstrap", "React Router", "Java"],
     "links": {
       "codeFrontend": "https://github.com/aungthuhein2005/lms-frontend",
@@ -124,8 +150,8 @@
     "subtitle": "ML-based churn risk dashboard",
     "badge": "ML",
     "image": "/images/customer-churn/img1.png",
-    "description": "Developed a web application that predicts customer churn probability based on uploaded datasets. Implemented a machine learning model using Python and Scikit-learn, with a React-based frontend for data upload and result visualization.",
-    "tags": ["Machine Learning", "Data Science", "Web App"],
+    "description": "Connected dataset upload and validation to a Scikit-learn inference pipeline, then surfaced churn probabilities through a React dashboard. The implementation separates preprocessing, prediction, and visualization so model outputs remain traceable through the application flow.",
+    "tags": ["Scikit-learn", "React", "Inference Pipeline", "Data Visualization"],
     "links": {
       "live": "https://customer-churn-prediction-qrpi5mtf2-aung-thu-heins-projects.vercel.app/"
     }
@@ -135,8 +161,8 @@
     "title": "ERP System",
     "subtitle": "Desktop ERP application",
     "badge": "ERP",
-    "description": "Developed as a team project at Host Myanmar Institute. Contributed as a Full-Stack Developer, working on the POS module, payment module, and unit exchange module. Built the application using Java SE and JavaFX for the user interface, with MySQL as the database.",
-    "tags": ["Java", "ERP"],
+    "description": "Contributed full-stack modules to a JavaFX and MySQL ERP system, including point-of-sale, payment, and unit-exchange workflows. The work required coordinating transactional business rules across desktop UI, application logic, and relational persistence.",
+    "tags": ["Java", "JavaFX", "MySQL", "ERP"],
     "links": {
       "code": "https://github.com/yanmyoaung2004/erp_final_java"
     }
@@ -146,7 +172,7 @@
     "title": "DevAsk",
     "subtitle": "Q&A platform for developers",
     "image": "/images/devask/1.png",
-    "description": "A Q&A platform inspired by StackOverflow, designed for developers to ask coding-related questions and provide answers.",
+    "description": "Implemented a relational developer Q&A system with Java EE and MySQL, modeling questions, answers, users, and discussion workflows. Bootstrap provides the presentation layer while server-side application logic coordinates validation and persistence.",
     "tags": ["JavaEE", "Bootstrap", "MySQL"],
     "links": {
       "code": "https://github.com/aungthuhein2005/dev_ask"
@@ -155,10 +181,10 @@
   {
     "id": "trash-trade",
     "title": "Trash Trade",
-    "subtitle": "Computer-vision trash trading",
+    "subtitle": "CNN-powered recycling workflow",
     "image": "/images/trashtrade/1.png",
-    "description": "A project aimed at reducing global trash by using computer vision to detect trash types. Users can trade trash for points, which can then be exchanged for gifts.",
-    "tags": ["Python", "Flask"],
+    "description": "Designed a request-time computer-vision pipeline that preprocesses an uploaded image, runs CNN inference to classify the waste category, and returns the result through a Flask service. The prediction feeds a points-and-rewards workflow that connects model output to a practical recycling interaction.",
+    "tags": ["Python", "Flask", "CNN", "Computer Vision"],
     "links": {
       "code": "https://github.com/aungthuhein2005/trash_trade"
     }
