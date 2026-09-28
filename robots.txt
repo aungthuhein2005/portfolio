@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://portfolio-theta-ten-63.vercel.app/sitemap.xml
