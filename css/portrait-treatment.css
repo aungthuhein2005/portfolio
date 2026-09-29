@@ -79,3 +79,42 @@
   transform: scale(1.025);
   opacity: 0.88;
 }
+
+.rag-thumb {
+  background: #082f2d;
+}
+
+.rag-thumb img {
+  max-width: 58%;
+  max-height: 78%;
+  object-fit: contain;
+}
+
+.bench-thumb {
+  padding: 1.25rem;
+  background: #ffffff;
+  border: 1px solid var(--line);
+  overflow: hidden;
+}
+
+.bench-thumb img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.small-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.small-case {
+  min-width: 0;
+}
+
+@media (max-width: 800px) {
+  .small-grid {
+    grid-template-columns: 1fr;
+  }
+}
