@@ -126,6 +126,8 @@
 
 .app-thumb {
   display: block;
+  width: 100%;
+  height: auto;
   aspect-ratio: 16 / 10;
   overflow: hidden;
   background: #f7f4ee;
@@ -156,5 +158,14 @@
   .small-grid,
   .app-grid {
     grid-template-columns: 1fr;
+  }
+
+  .app-grid {
+    gap: 3.5rem;
+  }
+
+  .app-thumb {
+    height: auto;
+    aspect-ratio: 16 / 10;
   }
 }
