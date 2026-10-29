@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 900" role="img" aria-labelledby="title desc">
+  <title id="title">GreenMind LLM inference optimization results</title>
+  <desc id="desc">Editorial graphic showing a 99.8 final score, 4.54 times baseline efficiency, and 298 of 300 requests delivered on time.</desc>
+  <rect width="1440" height="900" fill="#10291f"/>
+  <circle cx="1260" cy="-10" r="360" fill="#d8ff78" opacity=".08"/>
+  <circle cx="80" cy="880" r="270" fill="#d8ff78" opacity=".05"/>
+  <g fill="none" stroke="#d8ff78" stroke-width="2" opacity=".35">
+    <path d="M940 165h345M940 215h270M940 265h305"/>
+    <path d="M1030 390v290M1110 350v330M1190 430v250M1270 300v380"/>
+  </g>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text x="96" y="105" fill="#d8ff78" font-size="24" font-weight="700" letter-spacing="5">GREENMIND / 2026</text>
+    <text x="96" y="265" fill="#f2efe8" font-size="86" font-weight="700" letter-spacing="-4">More useful answers</text>
+    <text x="96" y="360" fill="#f2efe8" font-size="86" font-weight="700" letter-spacing="-4">per joule.</text>
+    <text x="96" y="465" fill="#a9b8ae" font-size="29">LLM inference optimization on one A100 40GB</text>
+    <line x1="96" y1="540" x2="1344" y2="540" stroke="#547063"/>
+    <text x="96" y="650" fill="#d8ff78" font-size="82" font-weight="700">99.8</text>
+    <text x="96" y="695" fill="#a9b8ae" font-size="20" letter-spacing="2">FINAL SCORE / 100</text>
+    <text x="505" y="650" fill="#f2efe8" font-size="82" font-weight="700">4.54×</text>
+    <text x="505" y="695" fill="#a9b8ae" font-size="20" letter-spacing="2">BASELINE EFFICIENCY</text>
+    <text x="930" y="650" fill="#f2efe8" font-size="82" font-weight="700">298/300</text>
+    <text x="930" y="695" fill="#a9b8ae" font-size="20" letter-spacing="2">REQUESTS ON TIME</text>
+    <text x="96" y="820" fill="#f2efe8" font-size="22" letter-spacing="2">INT8 W8A8  ·  MTP  ·  NEWEST-FIRST SCHEDULING</text>
+  </g>
+</svg>
